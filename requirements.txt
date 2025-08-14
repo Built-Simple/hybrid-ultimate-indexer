@@ -1,0 +1,10 @@
+# Core Requirements
+psutil>=5.9.0
+lz4>=4.0.0
+numpy>=1.20.0
+
+# Windows-specific
+pywin32>=300  # For Windows drive detection
+
+# GUI (usually included with Python)
+# tkinter - comes with Python installation
