@@ -1,7 +1,7 @@
 # Hybrid Ultimate Indexer v3.0
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
-[![Files Indexed](https://img.shields.io/badge/Files%20Indexed-11.6M-green)](https://github.com/yourusername/hybrid-ultimate-indexer)
+[![Files Indexed](https://img.shields.io/badge/Files%20Indexed-11.6M%20Local-green)](https://github.com/yourusername/hybrid-ultimate-indexer)
 [![Performance](https://img.shields.io/badge/Speed-4000%2B%20files%2Fsec-orange)](https://github.com/yourusername/hybrid-ultimate-indexer)
 [![License](https://img.shields.io/badge/License-MIT-purple)](LICENSE)
 
@@ -120,11 +120,34 @@ print(f"Found {len(python_files)} Python files")
 
 ## Advanced Features
 
-- **Network Drive Support**: Can index network shares (tested with 40TB+ network storage)
 - **Multi-Processing**: Utilizes all CPU cores efficiently
 - **Incremental Updates**: Only re-index changed files
 - **Archive Support**: Can peek inside ZIP files
 - **Real-time Monitoring**: Watch files being indexed live
+
+## 🌐 Network Drive Support (Beta)
+
+**Experimental: Network drive scanning for enterprise environments**
+
+### Current Capabilities:
+- ✅ **11.6 million local files** - Production ready, blazing fast!
+- 🔄 **110 million network files** - Beta feature, requires 70-100 hours
+
+### Realistic Performance:
+| Environment | Files | Speed | Time |
+|------------|-------|-------|------|
+| **Local Drives** | 11.6M | 1,000-4,000 files/sec | 3 hours |
+| **Network Drives** | 110M | 200-500 files/sec | 70-100 hours |
+
+### Network Features (v2.0):
+- Progress updates every 1,000 files
+- Checkpoint saves every 10,000 files
+- 3-second timeout per file
+- Resume from checkpoints
+- Test mode for validation
+
+**Note:** Network performance depends heavily on network speed and latency.
+Local indexing remains the primary use case with exceptional performance.
 
 ## Contributing
 
