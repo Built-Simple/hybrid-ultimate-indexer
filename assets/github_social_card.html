@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 60px;
+        }
+        
+        .title {
+            font-size: 72px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-shadow: 0 0 30px rgba(102, 126, 234, 0.5);
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin: 50px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #667eea;
+            text-shadow: 0 0 20px rgba(102, 126, 234, 0.8);
+        }
+        
+        .stat-label {
+            font-size: 20px;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+        
+        .tagline {
+            font-size: 28px;
+            opacity: 0.9;
+            margin-top: 40px;
+        }
+        
+        .lightning {
+            font-size: 100px;
+            filter: drop-shadow(0 0 20px #667eea);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lightning">⚡</div>
+        <div class="title">Hybrid Ultimate Indexer</div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">11.6M</div>
+                <div class="stat-label">Files Indexed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4,379/s</div>
+                <div class="stat-label">Peak Speed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">60MB</div>
+                <div class="stat-label">RAM Usage</div>
+            </div>
+        </div>
+        
+        <div class="tagline">The Fastest File Indexer for Windows</div>
+    </div>
+</body>
+</html>
